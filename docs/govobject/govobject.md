@@ -17,7 +17,7 @@
 
 
 # Governance Object
-A Governance Object (or "govObject") is a generic structure introduced in Dash Core v12.1 to allow for the creation of Budget Proposals, Triggers, and Watch Dogs. Class inheritance has been utilized to extend this generic object into a "Proposal" which is outlined throughout the remainder of this document. 
+A Governance Object (or "govObject") is a generic structure introduced in PZDC Core v2.0.1 to allow for the creation of Budget Proposals, Triggers, and Watch Dogs. Class inheritance has been utilized to extend this generic object into a "Proposal" which is outlined throughout the remainder of this document.
 
 ### `new GovObject([govObjectData])`
 
@@ -61,10 +61,10 @@ var jsonProposal = {
   name:"My First GovObject",
   start_epoch:1483228800, //timestamp in seconds
   end_epoch:1483747200, //Is valid if end_epoch>now_epoch
-  payment_address:'yXGeNPQXYFXhLAN1ZKrAjxzzBnZ2JZNKnh',
+  payment_address:'PVviXyJttmABoXCQ3yPKUD3T4B2G7UHSLF',
   payment_amount:10,
   type:1,//In this case, it will cast a proposal
-  url:"http://www.dash.org/proposal/first_proposal"
+  url:"https://api.pzdc.org/proposal/first_proposal"
 };
 
 //Will instantiate the govObject given the json passed as arg for fromObject
@@ -113,9 +113,9 @@ fromString.inspect();
 You could shallowcopy a first govObj into a second one
 
 ```javascript
-proposal.url="http://dash.org/badUrl"
+proposal.url="https://api.pzdc.org/badUrl"
 var shallowCopyProposal = proposal.shallowCopy();
-proposal.url="http://dash.org/fixedUrl"
+proposal.url="https://api.pzdcdash.org/fixedUrl"
 
 console.log(proposal.url!==shallowCopyProposal.url)//return true as it's a copy
 console.log(proposal!==shallowCopyProposal)//return true
@@ -143,10 +143,10 @@ var jsonProposal = {
   name:"My First Proposal",
   start_epoch:startDate,
   end_epoch:endDate,
-  payment_address:'yXGeNPQXYFXhLAN1ZKrAjxzzBnZ2JZNKnh',
+  payment_address:'PVviXyJttmABoXCQ3yPKUD3T4B2G7UHSLF',
   payment_amount:10,
   type:1,
-  url:"http://www.dash.org"
+  url:"https://api.pzdc.org"
 };
 
 var proposal = new Proposal();

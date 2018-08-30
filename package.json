@@ -1,8 +1,8 @@
 {
-  "name": "bitcore-lib-dash",
-  "version": "0.13.20",
-  "description": "A pure and powerful JavaScript Dash library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "name": "bitcore-lib-pzdc",
+  "version": "2.0.1",
+  "description": "A pure and powerful JavaScript PZDC library.",
+  "author": "Nugz <nugz@pzdc.org>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -66,10 +66,14 @@
     {
       "name": "Alex Werner",
       "email": "alex@werner.fr"
+    },
+    {
+      "name": "Boubonic Nugz",
+      "email": "boubonic.nugz@gmail.com"
     }
   ],
   "keywords": [
-    "dash",
+    "pzdc",
     "transaction",
     "address",
     "p2p",
@@ -86,7 +90,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashpay/bitcore-lib-dash.git"
+    "url": "https://github.com/pzdc-project/bitcore-lib-pzdc.git"
   },
   "browser": {
     "request": "browser-request"
@@ -102,7 +106,7 @@
     "x11-hash-js": "^1.0.0"
   },
   "devDependencies": {
-    "bitcore-build-dash": "dashpay/bitcore-build-dash",
+    "bitcore-build-pzdc": "pzdc-project/bitcore-build-pzdc",
     "browserify": "latest",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",

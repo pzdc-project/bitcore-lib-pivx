@@ -1,12 +1,13 @@
 {
-  "name": "bitcore-lib",
-  "main": "./bitcore-lib.min.js",
+  "name": "bitcore-lib-pzdc",
+  "main": "./bitcore-lib-pzdc.min.js",
   "version": "0.13.20",
-  "homepage": "http://bitcore.io",
+  "homepage": "https://pzdc.org",
   "authors": [
-    "BitPay, Inc."
+    "BitPay, Inc.",
+    "PZDC Community"
   ],
-  "description": "A pure, powerful core for your bitcoin project.",
+  "description": "A pure, powerful core for the PZDC project.",
   "moduleType": [
     "globals"
   ],
@@ -14,7 +15,9 @@
     "bitcoin",
     "bitcore",
     "btc",
-    "satoshi"
+    "satoshi",
+    "pzdc",
+    "projct zenith"
   ],
   "license": "MIT",
   "ignore": [

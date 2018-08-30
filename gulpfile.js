@@ -1,5 +1,3 @@
-
-
-var bitcoreTasks = require('bitcore-build-dash');
+var bitcoreTasks = require('bitcore-build-pzdc');
 
 bitcoreTasks('lib');

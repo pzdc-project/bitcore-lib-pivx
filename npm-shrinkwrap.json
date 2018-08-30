@@ -1,6 +1,6 @@
 {
-  "name": "bitcore-lib-dash",
-  "version": "0.13.20",
+  "name": "bitcore-lib-pzdc",
+  "version": "2.0.1",
   "dependencies": {
     "bn.js": {
       "version": "2.0.4",
